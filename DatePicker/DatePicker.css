@@ -1,0 +1,118 @@
+div.DatePickerContainer
+{
+    width: 110px;
+    min-height: 33px;
+}
+input.DatePicker
+{
+    outline-style: none;
+}
+.DatePicker .Calendar
+{
+    position: absolute; 
+    top: 28px; 
+    width: 17em;
+    border: solid 2px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    color: #333333;
+    padding: 0.2em 0.2em 0;
+    display: none;
+    z-index: 99999;
+}
+.DatePicker .Calendar header {
+    padding: 0.2em 0;
+    position: relative;
+    background-color: #6087C5;
+    border: 1px solid #5077B5;
+    color: #FFFFFF;
+    font-weight: normal;
+    clear: both;
+    height: 20px;
+}
+.DatePicker .Calendar header a
+{
+    color: #FFFFFF;
+}
+.DatePicker .Calendar table
+{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin: 0 0 0.4em;
+    width: 100%;
+    background-color: transparent;
+    border-spacing: 0;
+    max-width: 100%;
+    color: #333333;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    line-height: 18px;
+}
+.DatePicker .Calendar table td
+{
+    border: 0 none;
+    padding: 1px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-spacing: 0;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    line-height: 18px;
+}
+.DatePicker .Calendar table td a
+{
+    background-color: #F6F6F6;
+    border: 1px solid #CCCCCC;
+    color: #1C94C4;
+    font-weight: bold;
+    display: block;
+    padding: 0.2em;
+    text-align: right;
+    text-decoration: none;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    line-height: 18px;
+}
+.DatePicker .Calendar table th
+{
+    border: 0 none;
+    font-weight: bold;
+    padding: 0.7em 0.3em;
+    text-align: center;
+}
+.DatePicker .Title
+{
+    line-height: 1.8em;
+    margin: 0 2.3em;
+    text-align: center;
+    width: auto;
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    border: none;
+}
+.DatePicker .Icon
+{
+    display: block;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    color: #FFFFFF;
+    text-indent: -99999px;
+}
+.DatePicker .Next
+{
+    right: 2px;
+}
+.DatePicker .Previous
+{
+    left: 2px;
+}
+.DatePicker .Next, .DatePicker .Previous
+{
+    height: 1.8em;
+    position: absolute;
+    top: 0px;
+    width: 1.8em;
+}

@@ -1,0 +1,94 @@
+div.Timeline
+{
+    position: relative;
+    height: 40px;
+}
+div.TimelineProgressBar
+{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    height: 2px;
+    background-color: #6699aa;
+    width: 100%;
+    z-index: 10;
+}
+div.TimelineProgressBar.Expected
+{
+    background-color: #aaaaaa;
+    top: 29px;
+}
+div.TimelineProgressBar.Expected.Late
+{
+    background-color: #ffaaaa;
+}
+div.TimelineAxis
+{
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    top: 27px;
+    left: 0px;
+}
+div.Timeline .Milestone
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone.png");
+    z-index: 20;
+    cursor: pointer;
+    top: 20px;
+}
+div.Timeline .Milestone.Success
+{
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone-Success.png");
+}
+div.Timeline .Milestone.Urgent
+{
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone-Problem.png");
+}
+div.Timeline .Milestone.Warning
+{
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone-Warning.png");
+}
+div.Timeline .Milestone.Active
+{
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone-Active.png");
+}
+div.Timeline .Milestone.Inactive
+{
+    background-image: url("/ControlResource/Timeline/Images/Wafl-Timeline-Milestone-Inactive.png");
+}
+div.Timeline .TickMark
+{
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: #333333;
+    top: 17px;
+}
+div.Timeline .TickMark.Small
+{
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    height: 3px;
+    top: 24px;
+}
+div.Timeline .TickDate
+{
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+    width: 100px;
+    top: 2px;
+    margin-left: -50px;
+    text-align: center;
+}
+div.Timeline .TickDate:first-child
+{
+    margin-left: 0px;
+}

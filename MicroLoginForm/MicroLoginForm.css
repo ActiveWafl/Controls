@@ -1,0 +1,37 @@
+form.MicroLoginForm
+{
+    display: inline-block;
+    text-align: left;
+}
+
+form.MicroLoginForm label
+{
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+}
+form.MicroLoginForm input
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+    width: 80px;
+}
+form.MicroLoginForm button
+{
+    margin-left: 10px;
+    display: inline-block;
+}
+form.MicroLoginForm.Vertical label
+{
+    width: 70px;
+}
+form.MicroLoginForm a
+{
+    font-size: 12px;
+}
+form.MicroLoginForm .Left
+{
+    float: left;
+}

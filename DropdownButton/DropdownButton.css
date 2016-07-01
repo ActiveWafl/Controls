@@ -1,0 +1,48 @@
+.Dropup,
+.Dropdown {
+    position: relative;
+    display: inline-block;
+    *display: block;
+}
+.Dropup>button,
+.Dropdown>button
+{
+    display: block;
+}
+.Dropup>.DropupMenu button,
+.Dropdown>.DropdownMenu button
+{
+    display: block;
+    width: 100%;
+	border: none;
+	background: none;
+    outline: none;
+    text-align: left;
+}
+.DropdownToggle {
+    *margin-bottom: -3px;
+}
+.DropdownToggle:active,
+*[data-open] .DropdownToggle {
+    outline: 0;
+}
+.Dropdown .Expandable {
+    margin-top: 8px !important;
+    margin-left: 2px !important;
+}
+.Dropdown:hover .Expandable,
+*[data-open] .Expandable {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.Dropup .Expandable,
+.Toolbar.FixedBottom .Dropdown .Expandable {
+    border-top: 0;
+    border-bottom: 4px solid #000000;
+    content: "\2191";
+}
+.Dropup button.Large .Expandable,
+.Dropup .Button.Large .Expandable {
+    border-bottom: 5px solid #000000;
+    border-top: 0;
+}

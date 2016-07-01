@@ -1,0 +1,30 @@
+.Dock
+{
+    position: fixed;  
+}
+.Dock.Top
+{
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+.Dock.Right
+{
+    right: 0px;
+    top: 0px;
+    display: inline-block;
+    overflow: auto;
+}
+.Dock.Bottom
+{
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.Dock.Left
+{
+    left: 0px;
+    top: 0px;
+    display: inline-block;
+    overflow: auto;
+}

@@ -1,0 +1,43 @@
+div.Rotator
+{
+    position: relative;
+}
+div.Rotator ul
+{
+    width: 100%;
+}
+div.Rotator ul,
+div.Rotator ul li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+}
+div.Rotator ul li
+{
+    display: none;
+}
+div.Rotator ul li:first-child
+{
+    display: block;
+}
+div.Rotator a.RotatorNavButton
+{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #efefef;
+}
+div.Rotator.AutoHide a.RotatorNavButton
+{
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    outline: 0;
+}
+div.Rotator ul.Flow.Layout.Horizontal li
+{
+    float: left;
+}

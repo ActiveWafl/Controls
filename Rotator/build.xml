@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Rotator Wafl Control" default="Build">
+    <property name="ControlName" value="Rotator" />
+    <property name="ControlVersion" value="0.0.1" />
+
+    <condition property="is_windows">
+        <os family="windows" />
+    </condition>
+
+    <target name="Build" depends="Build_windows,Build_linux" />
+    <target name="Build_windows" if="is_windows">
+        <echo message="Getting Wafl path..."/>
+        <property environment="env"/>
+        <property name="WaflPath" value="${env.WAFL_PATH}"/>
+        <echo message="done (${env.WAFL_PATH})"/>
+
+        <echo message="Compressing file contents..."/>
+
+        <delete file="${basedir}\${ControlName}.wext" />
+        <exec executable="${WaflPath}\Bin\wafl.bat" failonerror="true">
+            <arg value="CompileControl" />
+            <arg value="${ControlName}" />
+            <arg path="${basedir}" />
+            <arg path="${basedir}" />
+            <arg value="${ControlVersion}" />
+        </exec>
+    </target>
+
+    <target name="Build_linux" unless="is_windows">
+        <echo message="Getting Wafl path..."/>
+        <property environment="env"/>
+        <property name="WaflPath" value="${env.WAFL_PATH}"/>
+        <echo message="done (${env.WAFL_PATH})"/>
+
+        <echo message="Compressing file contents..."/>
+
+        <delete file="${basedir}/${ControlName}.wext" />
+        <exec executable="${WaflPath}/Bin/wafl" failonerror="true">
+            <arg value="CompileControl" />
+            <arg value="${ControlName}" />
+            <arg path="${basedir}" />
+            <arg path="${basedir}" />
+            <arg value="${ControlVersion}" />
+        </exec>
+    </target>
+
+</project>
