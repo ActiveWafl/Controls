@@ -26,6 +26,23 @@
 *[data-open] .DropdownToggle {
     outline: 0;
 }
+button.Primary .Expandable,
+button.Warning .Expandable,
+button.Urgent .Expandable,
+button.Info .Expandable,
+button.Success .Expandable,
+button.Inverse .Expandable,
+.Button.Primary .Expandable,
+.Button.Warning .Expandable,
+.Button.Urgent .Expandable,
+.Button.Info .Expandable,
+.Button.Success .Expandable,
+.Button.Inverse .Expandable {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
 .Dropdown .Expandable {
     margin-top: 8px !important;
     margin-left: 2px !important;
