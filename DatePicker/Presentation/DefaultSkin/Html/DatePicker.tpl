@@ -1,4 +1,4 @@
-<div style="height: 28px; display: inline-block; *display: inline; {if isset($WIDTH)}width: {$WIDTH}px;{/if}position: relative;" class="DatePicker">
+<div style="display: inline-block; *display: inline; {if isset($WIDTH)}width: {$WIDTH}px;{/if}position: relative;" class="DatePicker">
     <input class="DatePicker {if isset($PARAMS.Class)}{$PARAMS.Class}{/if}" type="text"
            {if isset($PARAMS.Id)}id="{$PARAMS.Id}"{/if}
            {if isset($PARAMS.PostName)}name="{$PARAMS.PostName}"{/if}
