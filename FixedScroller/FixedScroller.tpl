@@ -1,3 +1,4 @@
+{nocache}
 <script type="text/javascript">
     Start
         (
@@ -10,3 +11,4 @@
             }
         );
 </script>
+{/nocache}

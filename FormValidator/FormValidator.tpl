@@ -1,3 +1,4 @@
+{nocache}
 {if isset($PARAMS.PassCaption)}
     <i class="{$PARAMS.PassCssClass} FormValidationIcon" id="{$PARAMS.ElementId}Pass" title="{$PARAMS.PassCaption}"></i>
 {elseif isset($PARAMS.DataLabel)}
@@ -26,3 +27,4 @@
             }
         );
 </script>
+{/nocache}
