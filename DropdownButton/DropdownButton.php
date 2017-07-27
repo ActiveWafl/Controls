@@ -12,6 +12,8 @@ extends \DblEj\Extension\ControlBase
         $buttonTitle        = isset($params["Title"]) ? $params["Title"] : null;
         $buttonClass    = isset($params["ButtonClass"]) ? $params["ButtonClass"] : null;
         $cssClass       = isset($params["CssClass"]) ? $params["CssClass"] : null;
+        $menuClass       = isset($params["MenuClass"]) ? $params["MenuClass"] : null;
+
         $onClick       = isset($params["OnClick"]) ? $params["OnClick"] : "";
 
         $buttonPosition = isset($params["ButtonPosition"]) ? $params["ButtonPosition"] : "left";
@@ -29,6 +31,7 @@ extends \DblEj\Extension\ControlBase
         $this->SetTemplateVariable("ON_CLICK", $onClick);
         $this->SetTemplateVariable("BUTTON_ID", $buttonId);
         $this->SetTemplateVariable("CSS_CLASS", $cssClass);
+        $this->SetTemplateVariable("MENU_CLASS", $menuClass);
         $this->SetTemplateVariable("CSS_STYLE", $cssStyle);
         $this->SetTemplateVariable("CONTAINER_CSS_STYLE", $containerCssStyle);
         $this->SetTemplateVariable("DROPDOWN_STYLE", $dropdownStyle);
