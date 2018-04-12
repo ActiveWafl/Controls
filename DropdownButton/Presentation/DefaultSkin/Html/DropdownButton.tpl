@@ -1,5 +1,5 @@
 {nocache}
-<div style="{$CONTAINER_CSS_STYLE}" class="Dropdown {$CSS_CLASS}" id="{$CONTAINER_ID}">
+<div style="{$CONTAINER_CSS_STYLE}" class="Dropdown {$CSS_CLASS}" {if $CONTAINER_ID}id="{$CONTAINER_ID}"{/if}>
     <button title="{$BUTTON_TITLE}" id="{$BUTTON_ID}" class="DropdownToggle {$BUTTON_CLASS}" style="{$CSS_STYLE}" onclick="DblEj.EventHandling.Events.StopeEventPropagation(event);DblEj.EventHandling.Events.PreventDefaultEvent(event);this.parentNode.ToggleAttribute('data-open');{$ON_CLICK}return false;">
         {$BUTTON_CAPTION} <b class="Expandable"></b>
     </button>
