@@ -34,7 +34,7 @@ Wafl.Controls.DatePicker.DatePicker = Class.extend(
                         textElement.isFocused = true;
                         if (calendarElement.style.opacity < 1)
                         {
-                            calendarElement.FadeIn(10);
+                            calendarElement.FadeIn(48);
                         }
                     }
                 )
@@ -44,7 +44,7 @@ Wafl.Controls.DatePicker.DatePicker = Class.extend(
                         textElement.isFocused = true;
                         if (calendarElement.style.opacity < 1)
                         {
-                            calendarElement.FadeIn(10);
+                            calendarElement.FadeIn(48);
                         }
                     }
                 )
@@ -61,13 +61,13 @@ Wafl.Controls.DatePicker.DatePicker = Class.extend(
                             {
                                 if (!textElement.isFocused)
                                 {
-                                    calendarElement.FadeOut(10,
+                                    calendarElement.FadeOut(48,
                                         function ()
                                         {
                                             calendarElement.Hide();
                                         });
                                 }
-                            }, 200
+                            }, 120
                             );
                     }
                 );
