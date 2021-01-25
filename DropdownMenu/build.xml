@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="DropdownMenu Wafl Control" default="Build">
     <property name="ControlName" value="DropdownMenu" />
-    <property name="ControlVersion" value="0.0.3" />
+    <property name="ControlVersion" value="0.0.4" />
 
     <condition property="is_windows">
         <os family="windows" />

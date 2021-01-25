@@ -1,22 +1,22 @@
 {nocache}
-<div style="display: inline-block; *display: inline; {if isset($WIDTH)}width: {$WIDTH}px;{/if}position: relative;" class="DatePicker">
+<div style="display: inline-block; *display: inline;{if isset($WIDTH)} width: {$WIDTH}px;{/if} position: relative;" class="DatePicker">
     <input class="DatePicker {if isset($PARAMS.Class)}{$PARAMS.Class}{/if}" type="text"
            {if isset($PARAMS.Id)}id="{$PARAMS.Id}"{/if}
            {if isset($PARAMS.PostName)}name="{$PARAMS.PostName}"{/if}
            {if isset($PARAMS.Value)}value="{$PARAMS.Value}"{else}value="0"{/if}
            {if isset($PARAMS.Disabled)}disabled="{$PARAMS.Disabled}"{/if}
            {if isset($PARAMS.Required)}required="{$PARAMS.Required}"{/if}
-           style="{if isset($PARAMS.Style)}{$PARAMS.Style} {/if}{if isset($WIDTH)}width: {$WIDTH}px;{else}width: 100%;{/if}" {if isset($PARAMS.Attributes)}{$PARAMS.Attributes}{/if} />
+           style="{if isset($PARAMS.Style)}{$PARAMS.Style}{/if}{if isset($WIDTH)} width: {$WIDTH}px;{else} width: 100%;{/if}"{if isset($PARAMS.Attributes)} {$PARAMS.Attributes}{/if} />
     <div class="Calendar" {if isset($PARAMS.Id)}id="{$PARAMS.Id}-Calendar"{/if} >
         <div style="z-index: 1; display: block;">
             <header>
-                <a title="Prev" {if isset($PARAMS.Id)}id="{$PARAMS.Id}-PrevLink"{/if} class="Previous" href="" onclick="return false;">
+                <a title="Prev"{if isset($PARAMS.Id)} id="{$PARAMS.Id}-PrevLink"{/if} class="Previous" href="" onclick="return false;">
                     <i class="IconCircleLeft"></i>
                 </a>
-                <a title="Next" {if isset($PARAMS.Id)}id="{$PARAMS.Id}-NextLink"{/if} class="Next" href="" onclick="return false;">
+                <a title="Next"{if isset($PARAMS.Id)} id="{$PARAMS.Id}-NextLink"{/if} class="Next" href="" onclick="return false;">
                     <i class="IconCircleRight"></i>
                 </a>
-                <div class="Title" {if isset($PARAMS.Id)}id="{$PARAMS.Id}-Title"{/if}>
+                <div class="Title"{if isset($PARAMS.Id)} id="{$PARAMS.Id}-Title"{/if}>
                     January 1900
                 </div>
             </header>
