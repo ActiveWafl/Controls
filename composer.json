@@ -1,0 +1,10 @@
+{
+    "name": "wafl/core-controls",
+    "description": "All native controls for WAFL",
+    "require": {
+        "php": ">=7.0",
+        "wafl/dblej": ">0",
+        "wafl/wafl": ">0"
+    },
+    "license": "MIT"
+}
